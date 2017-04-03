@@ -41,8 +41,8 @@ def basic():
         answer += """<html><head><title>Files and directories</title></head><body><ul>"""
         for i in os.listdir(os.getcwd()):
             answer=answer+os.getcwd()+"/"+i
-            answer+="""<li><a href='#'>show content</a></li>"""
-            webbrowser.open("file://"+os.getcwd()+"/"+i)
+            answer+="""<li><a href='#' action="clicked">show content</a></li>"""
+            #webbrowser.open("file://"+os.getcwd()+"/"+i) #uncomment it for some cool magic :)
             answer+="<br>"
             #def clicked():
                 #return webbrowser.open("file://"+os.getcwd()+"/"+i)
